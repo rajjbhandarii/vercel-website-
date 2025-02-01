@@ -1,0 +1,13 @@
+<p>form works!</p>
+<h2>Submit User Data</h2>
+<form (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="user.name" name="name" required />
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="user.email" name="email" required />
+    </div>
+    <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
