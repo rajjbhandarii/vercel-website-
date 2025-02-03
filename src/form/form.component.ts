@@ -14,7 +14,7 @@ export class FormComponent {
   serverAPI = 'https://testvercel-yn84.onrender.com/api/data';
   localAPI = 'http://localhost:3000/api/data';
   user = {
-    name: 'fg', email: ' u'
+    name: '', email: ''
   };
 
   constructor(private http: HttpClient) {
