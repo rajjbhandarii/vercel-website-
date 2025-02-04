@@ -26,7 +26,7 @@ export class DisplayComponent implements OnInit {
     });
   }
 
-  deleteUser(user: any) {
+  DeleteUser(user: any) {
     this.http.delete(this.serverAPI + '/' + user.id).subscribe(() => {
       this.fetchUser();
     });
